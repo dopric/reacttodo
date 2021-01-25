@@ -1,15 +1,12 @@
 import React from "react";
 import Todo from "./Todo";
 
-const TodoList = ()=>{
+const TodoList = ({todos, mark, deleteHandler})=>{
     return (
             <div className="row">
-            
-                    <Todo></Todo>
-                    <Todo></Todo>
-                    <Todo></Todo>
-                    <Todo></Todo>
-                    <Todo></Todo> 
+            {todos.map((t)=>{
+                    return <Todo key={t.id} todo={t} mark={mark} deleteHandler={deleteHandler} />
+            })}
             </div>
     )
 }

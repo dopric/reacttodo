@@ -1,4 +1,10 @@
-.todo{
-    min-width: 200px;
-    
+.todoCard{
+    min-width: 280px;
+    max-width: 280px;
+    margin: 5px;
+    height: 250px;
+}
+
+.completed{
+    text-decoration: line-through;
 }

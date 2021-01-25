@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ()=>{
     return (
-        <div class="jumbotron text-center">
+        <div className="jumbotron text-center">
             <h3>React Todo Application</h3>
         </div>
     )
