@@ -62,7 +62,9 @@ class App extends React.Component {
           <div className="row mb-5">
             <NewTodo add={this.addEntry} />
           </div>
+          <div className="row">
           <TodoList todos={this.state.todos} mark={this.mark} deleteHandler={this.delete} />
+          </div>
         </div>
       </div>
     );
